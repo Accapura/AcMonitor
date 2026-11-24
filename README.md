@@ -7,6 +7,23 @@ AcMonitor показывает FPS, 1% Low, загрузку и температ
 
 Бесплатно. Windows 10 и 11. Русский и английский интерфейс.
 
+[![Download](https://img.shields.io/badge/Скачать-Windows-orange?style=for-the-badge&logo=windows)](https://acmonitorpro.ru/)
+[![Telegram](https://img.shields.io/badge/Telegram-Бот-blue?style=for-the-badge&logo=telegram)](https://t.me/AcMonitorProBot)
+[![Website](https://img.shields.io/badge/Сайт-acmonitorpro.ru-brightgreen?style=for-the-badge)](https://acmonitorpro.ru/)
+
+---
+
+## Скриншоты
+
+### Оверлей поверх игры
+![Оверлей](screenshots/overlay.png)
+
+### Пресеты
+![Пресеты](screenshots/presets-ru.png)
+
+### История и бенчмарки
+![История](screenshots/history-ru.png)
+
 ---
 
 ## Что показывает оверлей
@@ -30,7 +47,7 @@ AcMonitor показывает FPS, 1% Low, загрузку и температ
 
 ## Почему безопасно
 
-FPS считается через события Windows (ETW), датчики читаются через LibreHardwareMonitor.  
+FPS считается через события Windows (**ETW**), датчики читаются через **LibreHardwareMonitor**.  
 AcMonitor **не инжектит код** в игру и не трогает её память — оверлей просто рисуется поверх окна.
 
 ---
@@ -65,19 +82,12 @@ AcMonitor **не инжектит код** в игру и не трогает е
 
 ---
 
-## Как начать
+## Как установить
 
-1. Скачай и установи программу (установщик всё настроит сам).
-2. Запусти игру — оверлей появится поверх неё.
-3. Настрой, что показывать, в окне настроек.
-4. Хочешь Pro — в приложении: **О программе → Войти через Telegram**.
-
----
-
-## Ссылки
-
-- 🌐 Сайт: [acmonitorpro.ru](https://acmonitorpro.ru/)
-- 💬 Поддержка и покупка Pro: [@AcMonitorProBot](https://t.me/AcMonitorProBot)
+1. Скачай последнюю версию из [Releases](https://github.com/Accapura/AcMonitor/releases) или с [сайта](https://acmonitorpro.ru/)
+2. Запусти установщик (нужны права администратора)
+3. Запусти игру — оверлей появится поверх
+4. Хочешь Pro → в приложении: **О программе → Войти через Telegram**
 
 ---
 
@@ -85,14 +95,22 @@ AcMonitor **не инжектит код** в игру и не трогает е
 
 **Оверлей не видно в игре**  
 1. Убедись, что оверлей включён (горячая клавиша или меню в трее).  
-2. Переключи игру в режим **Borderless** (в эксклюзивном полноэкранном окне поверх иногда не рисуется).  
+2. Переключи игру в режим **Borderless**.  
 3. Перезапусти AcMonitor.
 
 **Забанит ли античит?**  
-AcMonitor ничего не внедряет в игру. Данные берутся из Windows и датчиков ПК, оверлей — отдельное окно. Античиты на такое не реагируют. Полностью проверить все игры невозможно — при сомнениях пиши в поддержку.
+AcMonitor ничего не внедряет в игру. Данные берутся из Windows и датчиков ПК. Античиты на такое не реагируют.
 
 **Как перенести Pro на другой ПК?**  
-Pro привязан к Telegram-аккаунту и работает на 3 ПК. На новом компьютере: AcMonitor → «О программе» → «Войти через Telegram».
+Pro привязан к Telegram-аккаунту (до 3 ПК). На новом компьютере: AcMonitor → «О программе» → «Войти через Telegram».
+
+---
+
+## Ссылки
+
+- 🌐 Сайт: [acmonitorpro.ru](https://acmonitorpro.ru/)
+- 💬 Поддержка и покупка Pro: [@AcMonitorProBot](https://t.me/AcMonitorProBot)
+- 📥 Скачать: [Releases](https://github.com/Accapura/AcMonitor/releases)
 
 ---
 

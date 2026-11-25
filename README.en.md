@@ -1,117 +1,66 @@
-# AcMonitor
+<div align="center">
+  <img src="https://acmonitorpro.ru/a/logo256.png" width="80" height="80" alt="AcMonitor logo">
+  <h1>AcMonitor</h1>
+  <p><strong>In-game overlay for Windows</strong><br>Real-time FPS, frame pacing, and PC sensor readings</p>
+  <p>
+    <a href="https://acmonitorpro.ru/download?lang=en"><img src="https://img.shields.io/badge/Download%20for%20Windows-A84500?style=for-the-badge" alt="Download for Windows" height="30"></a>
+    &nbsp;
+    <a href="https://github.com/Accapura/AcMonitor/releases/latest"><img src="https://img.shields.io/badge/GitHub%20Releases-30363D?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub releases" height="30"></a>
+    &nbsp;
+    <a href="https://acmonitorpro.ru/?lang=en"><img src="https://img.shields.io/badge/AcMonitor%20Website-30363D?style=for-the-badge" alt="AcMonitor website" height="30"></a>
+  </p>
+  <p><sub>Windows 10 / 11 · x64 &nbsp;|&nbsp; <a href="README.md">Русский</a> · <strong>English</strong></sub></p>
+</div>
 
-**FPS and PC sensors right on top of your game**
+## What AcMonitor shows
 
-AcMonitor shows FPS, 1% Low, GPU and CPU load and temperatures in real time.  
-It injects nothing into the game, so anti-cheats have nothing to react to.
+| Area | Metrics and tools |
+| --- | --- |
+| **FPS and frame pacing** | Current and average FPS, 1% and 0.1% lows, a frametime chart, and stutter tracking. |
+| **PC sensors** | Utilization, temperatures, clocks, power, RAM, and VRAM. Available readings depend on your hardware. |
+| **Overlay** | Standard and compact line layouts, presets, and overheating alerts. |
+| **Benchmarks and history** | Quick runs, session reports, and FPS and temperature charts. |
 
-Free. Windows 10 and 11. English and Russian interface.
-
-[![Download](https://img.shields.io/badge/Download-Windows-orange?style=for-the-badge&logo=windows)](https://acmonitorpro.ru/)
-[![Telegram](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)](https://t.me/AcMonitorProBot)
-[![Website](https://img.shields.io/badge/Website-acmonitorpro.ru-brightgreen?style=for-the-badge)](https://acmonitorpro.ru/)
-
----
+AcMonitor reads FPS from Windows events (ETW). It runs as a separate process and does not inject code into the game.
 
 ## Screenshots
 
-### Overlay on top of a game
-![Overlay](screenshots/overlay.png)
+![AcMonitor overlay in a game, with FPS, sensor readings, and the frametime chart in the upper left](screenshots/gameplay-en.webp)
 
-### Presets
-![Presets](screenshots/presets-en.png)
+<p>
+  <img src="screenshots/overlay-en.png" width="245" alt="AcMonitor overlay with FPS, sensor readings, and a frametime chart">
+  <img src="screenshots/updater-en.png" width="385" alt="AcMonitor update window showing download progress">
+</p>
 
-### History & benchmarks
-![History](screenshots/history-en.png)
+The overlay and update window in AcMonitor 1.0.1, shown with sample readings and download progress.
 
----
+## Installation
 
-## What the overlay shows
+1. Download `AcMonitor_<version>_Setup.exe` from the [website](https://acmonitorpro.ru/download?lang=en) or [GitHub releases](https://github.com/Accapura/AcMonitor/releases/latest).
+2. Run the installer and follow the setup wizard. For CPU sensor readings, leave **PawnIO sensor driver** enabled if the wizard offers to install it.
+3. Start a game. Press **Ctrl + Shift + O** to show or hide the overlay, or **Ctrl + Shift + B** to start a benchmark.
 
-| Section | Data |
-|---------|------|
-| **FPS** | Current, average, 1% and 0.1% Low, Reflex latency. With DLSS, FSR and XeSS frame generation — how many frames are real |
-| **Graphics card** | Load, core and memory temperature, clocks, power, fans, video memory |
-| **Processor** | Load, temperature including per-CCD, clocks and power |
-| **Memory** | How much is used, speed, DIMM temperatures |
-| **Frame graph** | Every frame's time and a stutter detector |
+The installer includes .NET. You can verify the SHA‑256 checksum on the download page or in the matching release notes.
 
-### Also
-- One-key benchmark for 30, 60 or 120 seconds with a smoothness score
-- Session history with FPS and temperature graphs, run comparison
-- FPS color by thresholds and blinking on overheat
-- Ready presets, a compact single-line mode, hotkeys
-- One-click updates right from the app
+## Free and Pro
 
----
+| Free | Pro |
+| --- | --- |
+| Overlay, core sensor readings, frametime chart, and benchmarks. | Custom colors, font, presets, and game profiles. Version 1.0.1 adds an adjustable photo background for the overlay. |
+| The app shows the five most recent sessions and five most recent benchmarks. | Full history, session comparisons, TXT and CSV reports, and a results card for Discord. |
+| Default hotkeys. | Custom hotkeys and the option to hide the overlay from supported capture methods. |
 
-## Stays out of the game
+See [AcMonitor pricing](https://acmonitorpro.ru/tariffs?lang=en) for available plans. In version 1.0.1, you can sign in to your profile in the browser with Telegram, VK ID, or Google and turn on history sync.
 
-FPS is counted from Windows events (**ETW**), sensors are read through **LibreHardwareMonitor**.  
-AcMonitor doesn't inject code into the game or touch its memory — the overlay is simply drawn on top of the window.
+## Versions
 
----
+| Version | Highlights |
+| --- | --- |
+| **1.0.1** | Browser sign-in, session history sync and deletion, adjustable Pro photo backgrounds, the AcM mark, a redesigned About page, and SHA‑256 verification in the updater. Added support for short Pro keys. |
+| **1.0.0** | Initial release with an FPS and sensor overlay, benchmarks, history, presets, and Pro. |
 
-## Free vs Pro
-
-| Feature | Free | Pro |
-|---------|------|-----|
-| All sensors, graphs and stats | ✅ | ✅ |
-| Benchmark and the last 5 sessions in history | ✅ | ✅ |
-| Ready presets and single-line mode | ✅ | ✅ |
-| All overlay colors | ❌ | ✅ |
-| Font choice | ❌ | ✅ |
-| Your own presets | ❌ | ✅ |
-| Per-game profiles | ❌ | ✅ |
-| Your own hotkeys | ❌ | ✅ |
-| Hide the overlay from recordings and streams | ❌ | ✅ |
-| Full history, no limits | ❌ | ✅ |
-| Two runs compared on one graph | ❌ | ✅ |
-| txt reports and csv tables for Excel | ❌ | ✅ |
+[Full changelog](https://acmonitorpro.ru/changelog?lang=en)
 
 ---
 
-## System requirements
-
-- **OS:** Windows 10 / 11 (64-bit)
-- **Rights:** Administrator (required to read sensors)
-- **Graphics:** NVIDIA, AMD and Intel
-- **Processors:** Intel and AMD
-- **.NET:** No need to install, it's built in
-- **Internet:** Only for Pro sign-in and updates
-
----
-
-## Getting started
-
-1. Download the latest version from [Releases](https://github.com/Accapura/AcMonitor/releases) or from the [website](https://acmonitorpro.ru/)
-2. Run the installer (administrator rights required)
-3. Start your game — the overlay appears on top
-4. Want Pro? In the app: **About → Sign in with Telegram**
-
----
-
-## FAQ
-
-**The overlay isn't visible in the game**  
-1. Make sure the overlay is on (hotkey or tray menu).  
-2. Switch the game to **Borderless** mode.  
-3. Restart AcMonitor.
-
-**Will an anti-cheat ban me?**  
-AcMonitor injects nothing into the game. Data comes from Windows and PC sensors. Anti-cheats don't react to this.
-
-**How to move Pro to another PC?**  
-Pro is tied to your Telegram account (up to 3 PCs). On the new PC: AcMonitor → «About» → «Sign in with Telegram».
-
----
-
-## Links
-
-- 🌐 Website: [acmonitorpro.ru](https://acmonitorpro.ru/)
-- 💬 Support and Pro purchase: [@AcMonitorProBot](https://t.me/AcMonitorProBot)
-- 📥 Download: [Releases](https://github.com/Accapura/AcMonitor/releases)
-
----
-
-Made with ❤️ for those who want to see real performance without the risk of a ban.
+Developed by **Accapura** · [Support](https://acmonitorpro.ru/support?lang=en) · [Discord](https://discord.com/users/256419758369538048)
